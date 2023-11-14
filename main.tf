@@ -40,8 +40,6 @@ esource "aws_instance" "instance" {
 
   count=4
 
-  key_name="kiddcorp"
-
   tags = {
 
     Name = "instance-${count.index}",
