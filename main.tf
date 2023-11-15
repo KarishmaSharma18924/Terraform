@@ -40,6 +40,8 @@ esource "aws_instance" "instance" {
 
   count=4
 
+  key_name = "user10_deployer-key"
+
   tags = {
 
     Name = "instance-${count.index}",
